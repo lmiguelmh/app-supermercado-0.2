@@ -7,27 +7,27 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="5895f" class="javax.swing.JButton" binding="listarPersonasButton" default-binding="true">
+      <component id="5895f" class="javax.swing.JButton" binding="listarPersonalButton">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <text value="Listar Personas"/>
+          <text value="Listar Personal"/>
         </properties>
       </component>
-      <component id="ef8b4" class="javax.swing.JButton" binding="agregarPersonaButton" default-binding="true">
+      <component id="ef8b4" class="javax.swing.JButton" binding="agregarPersonalButton" default-binding="true">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <text value="Agregar Persona"/>
+          <text value="Agregar Personal"/>
         </properties>
       </component>
       <component id="9578c" class="javax.swing.JButton" binding="listarProductosButton" default-binding="true">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
@@ -36,7 +36,7 @@
       </component>
       <component id="89a3e" class="javax.swing.JButton" binding="agregarProductoButton" default-binding="true">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
@@ -45,11 +45,20 @@
       </component>
       <component id="95ab5" class="javax.swing.JLabel" binding="sampleLabel">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
           <text value="pe-text"/>
+        </properties>
+      </component>
+      <component id="bb799" class="javax.swing.JButton" binding="modificarPersonalButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Modificar Personal"/>
         </properties>
       </component>
     </children>

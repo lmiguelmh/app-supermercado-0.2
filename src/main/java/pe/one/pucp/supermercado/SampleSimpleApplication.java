@@ -28,9 +28,11 @@ import pe.one.pucp.supermercado.service.HelloWorldService;
 
 import javax.swing.*;
 
+/*
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan(basePackages={"pe.one"})
+*/
 public class SampleSimpleApplication extends JFrame implements CommandLineRunner {
 
 	// Simple example shows how a command line spring application can execute an
@@ -46,15 +48,10 @@ public class SampleSimpleApplication extends JFrame implements CommandLineRunner
 	@Override
 	public void run(String... args) {
 		System.out.println(this.helloWorldService.getHelloMessage());
-
-
-
     }
 
-	public static void main(String[] args) throws Exception {
-        //System.out.println("here");
-        SpringApplication.run(SampleSimpleApplication.class, args);
-        //System.out.println("HERE!");
 
+	public static void main(String[] args) throws Exception {
+        SpringApplication.run(SampleSimpleApplication.class, args);
     }
 }
