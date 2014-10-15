@@ -7,7 +7,7 @@ For testing purposes you need to have Maven3 installed and configured.
 
 *Windows*
 
-  cd app-supermercado-0.2
-  mvn clean package
-  cd target
-  java -jar app-supermercado-1.1.8.RELEASE.jar
+    cd app-supermercado-0.2
+    mvn clean package
+    cd target
+    java -jar app-supermercado-1.1.8.RELEASE.jar
