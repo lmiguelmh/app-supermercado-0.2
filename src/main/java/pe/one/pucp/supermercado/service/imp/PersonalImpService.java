@@ -30,9 +30,8 @@ public class PersonalImpService implements PersonalService {
     public String getListVendedorString() {
         List<Vendedor> list = listVendedor();
         StringBuffer sb = new StringBuffer();
-        int i = 0;
         for(Vendedor vendedor:list) {
-            sb.append("" + (i++) + ":" + vendedor + "\n");
+            sb.append(vendedor).append(" ");
         }
         return sb.toString();
     }

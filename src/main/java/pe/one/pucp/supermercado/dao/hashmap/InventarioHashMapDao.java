@@ -4,7 +4,9 @@ import org.springframework.stereotype.Repository;
 import pe.one.pucp.supermercado.dao.InventarioDao;
 import pe.one.pucp.supermercado.model.Producto;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -40,5 +42,10 @@ public class InventarioHashMapDao implements InventarioDao {
         if(inventario.containsKey(coProducto))
             return inventario.get(coProducto);
         return new Producto();
+    }
+
+    @Override
+    public List<Producto> listProducto() {
+        return new ArrayList<Producto>(inventario.values());
     }
 }
