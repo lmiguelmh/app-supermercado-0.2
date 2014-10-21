@@ -11,3 +11,5 @@ For testing purposes you need to have Maven3 installed and configured.
     mvn clean package
     cd target
     java -jar app-supermercado-1.1.8.RELEASE.jar
+
+Developed in IntelliJ Idea

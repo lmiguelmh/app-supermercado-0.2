@@ -6,8 +6,10 @@ import pe.one.pucp.supermercado.model.Producto;
 import pe.one.pucp.supermercado.model.Vendedor;
 import pe.one.pucp.supermercado.service.InventarioService;
 import pe.one.pucp.supermercado.service.PersonalService;
+import pe.one.pucp.supermercado.ui.PersonalUI;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,7 +28,12 @@ public class MainUIController {
     @Autowired
     InventarioService inventarioService;
 
+    @Autowired
+    PersonalUI personalUI;
+
     public void listarPersonalClick() {
+        personalUI.setTableModel(personalService.getVendedorTableModel());
+
         String list = personalService.getListVendedorString();
         JOptionPane.showInputDialog(
                 null,
@@ -36,6 +43,22 @@ public class MainUIController {
                 null,
                 null,
                 list);
+
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    JFrame frame = new JFrame("PersonalUI");
+                    //MainUI mainUI = new MainUI();
+                    //personalUI.setLabelText("PUCP2014");
+                    frame.setContentPane(personalUI.getMainPanel());
+                    frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+                    frame.pack();
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });;
     }
 
     private int coVendedorCount = 0;

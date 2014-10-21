@@ -6,6 +6,8 @@ import pe.one.pucp.supermercado.dao.PersonalDao;
 import pe.one.pucp.supermercado.model.Vendedor;
 import pe.one.pucp.supermercado.service.PersonalService;
 
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 import java.util.List;
 
 /**
@@ -39,5 +41,18 @@ public class PersonalImpService implements PersonalService {
     @Override
     public void insertOrUpdateVendedor(Vendedor vendedor) {
         personalDao.insertOrUpdateVendedor(vendedor);
+    }
+
+    @Override
+    public TableModel getVendedorTableModel() {
+        List<Vendedor> list = listVendedor();
+        Object []header = new Object[] {"Código", "Nombre", "Estado"};
+        Object [][]data = new Object[list.size()][3];
+        for(int v=0; v<list.size(); v++) {
+            data[v][0] = list.get(v).getCoVendedor();
+            data[v][1] = list.get(v).getNoVendedor();
+            data[v][2] = list.get(v).getEsVendedor();
+        }
+        return new DefaultTableModel(data, header);
     }
 }
