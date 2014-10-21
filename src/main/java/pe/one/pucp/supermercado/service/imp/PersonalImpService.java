@@ -55,4 +55,9 @@ public class PersonalImpService implements PersonalService {
         }
         return new DefaultTableModel(data, header);
     }
+
+    @Override
+    public Vendedor getVendedor(String codigo) {
+        return personalDao.getVendedor(codigo);
+    }
 }

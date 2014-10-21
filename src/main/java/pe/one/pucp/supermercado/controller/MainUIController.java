@@ -33,17 +33,6 @@ public class MainUIController {
 
     public void listarPersonalClick() {
         personalUI.setTableModel(personalService.getVendedorTableModel());
-
-        String list = personalService.getListVendedorString();
-        JOptionPane.showInputDialog(
-                null,
-                "",
-                "Dialog",
-                JOptionPane.PLAIN_MESSAGE,
-                null,
-                null,
-                list);
-
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
@@ -51,8 +40,10 @@ public class MainUIController {
                     //MainUI mainUI = new MainUI();
                     //personalUI.setLabelText("PUCP2014");
                     frame.setContentPane(personalUI.getMainPanel());
-                    frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.setPreferredSize(new Dimension(500, 400));
                     frame.pack();
+                    frame.setLocationRelativeTo(null);
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();

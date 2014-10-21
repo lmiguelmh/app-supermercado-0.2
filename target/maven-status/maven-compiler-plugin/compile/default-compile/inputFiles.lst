@@ -8,12 +8,15 @@ C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Cliente.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\MainApp.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Usuario.java
-C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\imp\InventarioImpService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\config\JPAConfiguration.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\ClienteDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\imp\InventarioImpService.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\PersonalDao.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\HelloWorldService.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\MainUIController.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\PersonalUIController.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\InventarioService.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\AbstractSupermercadoModel.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\hashmap\PersonalHashMapDao.java
 C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Producto.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\PersonalUI.java

@@ -18,4 +18,6 @@ public interface PersonalService {
     void insertOrUpdateVendedor(Vendedor vendedor);
 
     TableModel getVendedorTableModel();
+
+    Vendedor getVendedor(String codigo);
 }

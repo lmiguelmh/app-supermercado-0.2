@@ -8,6 +8,12 @@ public class Vendedor extends AbstractSupermercadoModel {
     String esVendedor; // estado vendedor
     String noVendedor; // nombre
 
+    public Vendedor() {
+        coVendedor = "";
+        noVendedor = "";
+        esVendedor = "0";
+    }
+
     public String getCoVendedor() {
         return coVendedor;
     }

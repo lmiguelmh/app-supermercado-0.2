@@ -20,7 +20,7 @@ public class PersonalHashMapDao implements PersonalDao {
     @Override
     public void insertOrUpdateVendedor(Vendedor vendedor) {
         if(vendedor==null || !vendedor.isValidForDao()) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Datos no válidos en bean Vendedor");
         }
 
         if(personal.containsKey(vendedor.getCoVendedor())) {
@@ -36,7 +36,7 @@ public class PersonalHashMapDao implements PersonalDao {
     @Override
     public Vendedor getVendedor(String coVendedor) {
         if(coVendedor==null || coVendedor.isEmpty()) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Código de vendedor no válido");
         }
 
         if(personal.containsKey(coVendedor))
