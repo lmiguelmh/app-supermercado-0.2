@@ -1,5 +1,6 @@
 package pe.one.pucp.supermercado.dao;
 
+//import pe.one.pucp.supermercado.gdao.GenericDao;
 import pe.one.pucp.supermercado.model.Cliente;
 
 import java.util.List;
@@ -7,7 +8,7 @@ import java.util.List;
 /**
  * Created by lmiguelmh on 05/10/2014.
  */
-public interface ClienteDao {
+public interface ClienteDao /*extends GenericDao*/ {
     void insertOrUpdateCliente(Cliente cliente);
     Cliente getCliente(String coCliente);
     List<Cliente> listCliente();
