@@ -20,4 +20,6 @@ public interface InventarioService {
     TableModel getProductoTableModel();
 
     Producto getProducto(String codigo);
+
+    void deleteProducto(Producto producto);
 }

@@ -63,4 +63,9 @@ public class InventarioImpService implements InventarioService {
     public Producto getProducto(String codigo) {
         return inventarioDao.getProducto(codigo);
     }
+
+    @Override
+    public void deleteProducto(Producto producto) {
+        inventarioDao.deleteProducto(producto);
+    }
 }

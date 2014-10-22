@@ -20,4 +20,6 @@ public interface PersonalService {
     TableModel getVendedorTableModel();
 
     Vendedor getVendedor(String codigo);
+
+    void deleteVendedor(Vendedor vendedor);
 }

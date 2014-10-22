@@ -11,4 +11,6 @@ public interface InventarioDao {
     void insertOrUpdateProducto(Producto producto);
     Producto getProducto(String coProducto);
     List<Producto> listProducto();
+
+    void deleteProducto(Producto producto);
 }

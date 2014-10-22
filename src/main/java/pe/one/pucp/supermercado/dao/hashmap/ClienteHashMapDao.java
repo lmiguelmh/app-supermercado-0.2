@@ -48,4 +48,17 @@ public class ClienteHashMapDao implements ClienteDao {
     public List<Cliente> listCliente() {
         return new ArrayList<Cliente>(clientes.values());
     }
+
+    @Override
+    public void deleteCliente(Cliente cliente) {
+        if(cliente==null || !cliente.isValidForDao()) {
+            throw new IllegalArgumentException("Datos no válidos en bean Cliente");
+        }
+
+        if(clientes.containsKey(cliente.getCoCliente())) {
+            clientes.remove(cliente.getCoCliente());
+        } else {
+            throw new IllegalArgumentException("Cliente no existe");
+        }
+    }
 }

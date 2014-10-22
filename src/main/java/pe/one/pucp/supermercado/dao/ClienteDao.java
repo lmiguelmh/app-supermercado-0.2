@@ -11,4 +11,6 @@ public interface ClienteDao {
     void insertOrUpdateCliente(Cliente cliente);
     Cliente getCliente(String coCliente);
     List<Cliente> listCliente();
+
+    void deleteCliente(Cliente cliente);
 }

@@ -88,4 +88,18 @@ public class InventarioUIController {
             setUI(producto);
         }
     }
+
+    public void eliminarClick() {
+        try {
+            Producto producto = readUI();
+            inventarioService.deleteProducto(producto);
+            Producto empty = new Producto();
+            setUI(empty);
+            inventarioUI.setTableModel(inventarioService.getProductoTableModel());
+            JOptionPane.showMessageDialog(null, "Registro eliminado", "", JOptionPane.INFORMATION_MESSAGE);
+        } catch(Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, e.getMessage(), "", JOptionPane.ERROR_MESSAGE);
+        }
+    }
 }

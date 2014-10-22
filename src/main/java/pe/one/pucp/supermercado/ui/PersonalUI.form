@@ -86,7 +86,7 @@
               </vspacer>
               <vspacer id="da536">
                 <constraints>
-                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                   <gridbag weightx="0.0" weighty="0.0"/>
                 </constraints>
               </vspacer>
@@ -118,6 +118,15 @@
                 </constraints>
                 <properties>
                   <text value="Nuevo"/>
+                </properties>
+              </component>
+              <component id="51330" class="javax.swing.JButton" binding="eliminarButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Eliminar"/>
                 </properties>
               </component>
             </children>

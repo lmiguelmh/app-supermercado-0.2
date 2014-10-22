@@ -48,4 +48,17 @@ public class InventarioHashMapDao implements InventarioDao {
     public List<Producto> listProducto() {
         return new ArrayList<Producto>(inventario.values());
     }
+
+    @Override
+    public void deleteProducto(Producto producto) {
+        if(producto==null || !producto.isValidForDao()) {
+            throw new IllegalArgumentException("Datos no válidos en bean Producto");
+        }
+
+        if(inventario.containsKey(producto.getCoProducto())) {
+            inventario.remove(producto.getCoProducto());
+        } else {
+            throw new IllegalArgumentException("Producto no existe");
+        }
+    }
 }

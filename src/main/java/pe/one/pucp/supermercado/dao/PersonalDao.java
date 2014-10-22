@@ -12,4 +12,6 @@ public interface PersonalDao {
     void insertOrUpdateVendedor(Vendedor vendedor);
     Vendedor getVendedor(String coVendedor);
     List<Vendedor> listVendedor();
+
+    void deleteVendedor(Vendedor vendedor);
 }

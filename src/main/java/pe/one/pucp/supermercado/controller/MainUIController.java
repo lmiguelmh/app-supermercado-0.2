@@ -6,6 +6,7 @@ import pe.one.pucp.supermercado.model.Producto;
 import pe.one.pucp.supermercado.model.Vendedor;
 import pe.one.pucp.supermercado.service.InventarioService;
 import pe.one.pucp.supermercado.service.PersonalService;
+import pe.one.pucp.supermercado.ui.ClienteUI;
 import pe.one.pucp.supermercado.ui.InventarioUI;
 import pe.one.pucp.supermercado.ui.MainUI;
 import pe.one.pucp.supermercado.ui.PersonalUI;
@@ -35,6 +36,9 @@ public class MainUIController {
 
     @Autowired
     InventarioUI inventarioUI;
+
+    @Autowired
+    ClienteUI clienteUI;
 
     @Autowired
     MainUI mainUI;
@@ -153,7 +157,21 @@ public class MainUIController {
     }
 
     public void listarClientesClick() {
-
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    JFrame frame = new JFrame("ClienteUI");
+                    frame.setContentPane(clienteUI.getMainPanel());
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.setPreferredSize(new Dimension(500, 400));
+                    frame.pack();
+                    frame.setLocationRelativeTo(null);
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     public void modificarClientesClick() {

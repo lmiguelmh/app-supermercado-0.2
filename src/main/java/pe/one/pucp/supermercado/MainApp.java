@@ -37,7 +37,9 @@ public class MainApp extends JFrame implements CommandLineRunner {
                     mainUI.setLabelText("PUCP2014");
                     frame.setContentPane(mainUI.getMainPanel());
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setPreferredSize(new Dimension(200, 300));
                     frame.pack();
+                    frame.setLocationRelativeTo(null);
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();

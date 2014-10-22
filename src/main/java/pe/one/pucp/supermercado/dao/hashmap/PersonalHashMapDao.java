@@ -48,4 +48,17 @@ public class PersonalHashMapDao implements PersonalDao {
     public List<Vendedor> listVendedor() {
         return new ArrayList<Vendedor>(personal.values());
     }
+
+    @Override
+    public void deleteVendedor(Vendedor vendedor) {
+        if(vendedor==null || !vendedor.isValidForDao()) {
+            throw new IllegalArgumentException("Datos no válidos en bean Vendedor");
+        }
+
+        if(personal.containsKey(vendedor.getCoVendedor())) {
+            personal.remove(vendedor.getCoVendedor());
+        } else {
+            throw new IllegalArgumentException("Vendedor no existe");
+        }
+    }
 }

@@ -25,8 +25,8 @@ public class PersonalUIController {
     PersonalUI personalUI;
 
     public void insertarClick() {
-        Vendedor vendedor = readUI();
         try {
+            Vendedor vendedor = readUI();
             personalService.insertOrUpdateVendedor(vendedor);
             Vendedor empty = new Vendedor();
             setUI(empty);
@@ -74,5 +74,19 @@ public class PersonalUIController {
         vendedor.setNoVendedor(names[(int)Math.round(Math.random() * (names.length-1))]);
         vendedor.setEsVendedor("" + (int)Math.round(Math.random()*1));
         setUI(vendedor);
+    }
+
+    public void eliminarClick() {
+        try {
+            Vendedor vendedor = readUI();
+            personalService.deleteVendedor(vendedor);
+            Vendedor empty = new Vendedor();
+            setUI(empty);
+            personalUI.setTableModel(personalService.getVendedorTableModel());
+            JOptionPane.showMessageDialog(null, "Registro eliminado", "", JOptionPane.INFORMATION_MESSAGE);
+        } catch(Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, e.getMessage(), "", JOptionPane.ERROR_MESSAGE);
+        }
     }
 }

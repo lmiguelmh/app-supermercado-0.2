@@ -60,4 +60,9 @@ public class PersonalImpService implements PersonalService {
     public Vendedor getVendedor(String codigo) {
         return personalDao.getVendedor(codigo);
     }
+
+    @Override
+    public void deleteVendedor(Vendedor vendedor) {
+        personalDao.deleteVendedor(vendedor);
+    }
 }

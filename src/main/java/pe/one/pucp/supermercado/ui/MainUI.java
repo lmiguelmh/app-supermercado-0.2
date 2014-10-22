@@ -39,36 +39,36 @@ public class MainUI {
                 controller.listarPersonalClick();
             }
         });
-        modificarPersonalButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                controller.modificarPersonalClick();
-            }
-        });
+        //modificarPersonalButton.addActionListener(new ActionListener() {
+        //    @Override
+        //    public void actionPerformed(ActionEvent e) {
+        //        controller.modificarPersonalClick();
+        //    }
+        //});
         listarProductosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 controller.listarProductosClick();
             }
         });
-        modificarProductosButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                controller.modificarProductosClick();
-            }
-        });
+        //modificarProductosButton.addActionListener(new ActionListener() {
+        //    @Override
+        //    public void actionPerformed(ActionEvent e) {
+        //        controller.modificarProductosClick();
+        //    }
+        //});
         listarClientesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 controller.listarClientesClick();
             }
         });
-        modificarClientesButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                controller.modificarClientesClick();
-            }
-        });
+        //modificarClientesButton.addActionListener(new ActionListener() {
+        //    @Override
+        //    public void actionPerformed(ActionEvent e) {
+        //        controller.modificarClientesClick();
+        //    }
+        //});
     }
 
     public JPanel getMainPanel() {
@@ -105,95 +105,89 @@ public class MainUI {
         GridBagConstraints gbc;
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 1;
+        gbc.gridy = 2;
         gbc.fill = GridBagConstraints.BOTH;
         mainPanel.add(panel1, gbc);
         listarPersonalButton = new JButton();
-        listarPersonalButton.setText("Listar Personal");
+        listarPersonalButton.setText("Administrar Personal");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panel1.add(listarPersonalButton, gbc);
-        modificarPersonalButton = new JButton();
-        modificarPersonalButton.setText("AgregarModificar");
-        modificarPersonalButton.setMnemonic('M');
-        modificarPersonalButton.setDisplayedMnemonicIndex(7);
-        gbc = new GridBagConstraints();
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-        panel1.add(modificarPersonalButton, gbc);
         final JLabel label1 = new JLabel();
+        label1.setFont(new Font(label1.getFont().getName(), Font.BOLD, label1.getFont().getSize()));
         label1.setText("Personal");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 0;
+        gbc.gridy = 1;
         mainPanel.add(label1, gbc);
         final JLabel label2 = new JLabel();
+        label2.setFont(new Font(label2.getFont().getName(), Font.BOLD, label2.getFont().getSize()));
         label2.setText("Productos");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 2;
+        gbc.gridy = 4;
         mainPanel.add(label2, gbc);
         final JPanel panel2 = new JPanel();
         panel2.setLayout(new GridBagLayout());
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 3;
+        gbc.gridy = 5;
         gbc.fill = GridBagConstraints.BOTH;
         mainPanel.add(panel2, gbc);
         listarProductosButton = new JButton();
-        listarProductosButton.setText("Listar Productos");
+        listarProductosButton.setText("Administrar Productos");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panel2.add(listarProductosButton, gbc);
-        modificarProductosButton = new JButton();
-        modificarProductosButton.setText("AgregarModificar");
-        modificarProductosButton.setMnemonic('M');
-        modificarProductosButton.setDisplayedMnemonicIndex(7);
-        gbc = new GridBagConstraints();
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-        panel2.add(modificarProductosButton, gbc);
         sampleLabel = new JLabel();
         sampleLabel.setText("pe-text");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 6;
+        gbc.gridy = 9;
         mainPanel.add(sampleLabel, gbc);
         final JLabel label3 = new JLabel();
+        label3.setFont(new Font(label3.getFont().getName(), Font.BOLD, label3.getFont().getSize()));
         label3.setText("Clientes");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 4;
+        gbc.gridy = 7;
         mainPanel.add(label3, gbc);
         final JPanel panel3 = new JPanel();
         panel3.setLayout(new GridBagLayout());
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 5;
+        gbc.gridy = 8;
         gbc.fill = GridBagConstraints.BOTH;
         mainPanel.add(panel3, gbc);
         listarClientesButton = new JButton();
-        listarClientesButton.setText("Listar Clientes");
+        listarClientesButton.setText("Administrar Clientes");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panel3.add(listarClientesButton, gbc);
-        modificarClientesButton = new JButton();
-        modificarClientesButton.setText("AgregarModificar");
-        modificarClientesButton.setMnemonic('M');
-        modificarClientesButton.setDisplayedMnemonicIndex(7);
+        final JPanel spacer1 = new JPanel();
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-        panel3.add(modificarClientesButton, gbc);
+        gbc.gridy = 0;
+        gbc.fill = GridBagConstraints.VERTICAL;
+        mainPanel.add(spacer1, gbc);
+        final JPanel spacer2 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 3;
+        gbc.fill = GridBagConstraints.VERTICAL;
+        mainPanel.add(spacer2, gbc);
+        final JPanel spacer3 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 6;
+        gbc.fill = GridBagConstraints.VERTICAL;
+        mainPanel.add(spacer3, gbc);
     }
 
     /**

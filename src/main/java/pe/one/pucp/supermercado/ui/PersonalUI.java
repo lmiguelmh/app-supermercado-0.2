@@ -28,6 +28,7 @@ public class PersonalUI {
     private JButton insertarActualizarButton;
     private JButton nuevoButton;
     private JButton randomButton;
+    private JButton eliminarButton;
 
     @Autowired
     PersonalUIController controller;
@@ -67,6 +68,12 @@ public class PersonalUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 controller.randomClick();
+            }
+        });
+        eliminarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controller.eliminarClick();
             }
         });
     }
@@ -199,7 +206,7 @@ public class PersonalUI {
         final JPanel spacer2 = new JPanel();
         gbc = new GridBagConstraints();
         gbc.gridx = 2;
-        gbc.gridy = 4;
+        gbc.gridy = 5;
         gbc.fill = GridBagConstraints.VERTICAL;
         panel2.add(spacer2, gbc);
         final JPanel spacer3 = new JPanel();
@@ -228,6 +235,13 @@ public class PersonalUI {
         gbc.gridy = 1;
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panel2.add(nuevoButton, gbc);
+        eliminarButton = new JButton();
+        eliminarButton.setText("Eliminar");
+        gbc = new GridBagConstraints();
+        gbc.gridx = 4;
+        gbc.gridy = 4;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        panel2.add(eliminarButton, gbc);
         final JPanel panel3 = new JPanel();
         panel3.setLayout(new BorderLayout(0, 0));
         panel1.add(panel3, BorderLayout.CENTER);
