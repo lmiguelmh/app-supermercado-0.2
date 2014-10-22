@@ -6,6 +6,8 @@ import pe.one.pucp.supermercado.model.Producto;
 import pe.one.pucp.supermercado.model.Vendedor;
 import pe.one.pucp.supermercado.service.InventarioService;
 import pe.one.pucp.supermercado.service.PersonalService;
+import pe.one.pucp.supermercado.ui.InventarioUI;
+import pe.one.pucp.supermercado.ui.MainUI;
 import pe.one.pucp.supermercado.ui.PersonalUI;
 
 import javax.swing.*;
@@ -31,14 +33,18 @@ public class MainUIController {
     @Autowired
     PersonalUI personalUI;
 
+    @Autowired
+    InventarioUI inventarioUI;
+
+    @Autowired
+    MainUI mainUI;
+
     public void listarPersonalClick() {
         personalUI.setTableModel(personalService.getVendedorTableModel());
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
                     JFrame frame = new JFrame("PersonalUI");
-                    //MainUI mainUI = new MainUI();
-                    //personalUI.setLabelText("PUCP2014");
                     frame.setContentPane(personalUI.getMainPanel());
                     frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     frame.setPreferredSize(new Dimension(500, 400));
@@ -49,7 +55,7 @@ public class MainUIController {
                     e.printStackTrace();
                 }
             }
-        });;
+        });
     }
 
     private int coVendedorCount = 0;
@@ -83,15 +89,21 @@ public class MainUIController {
     }
 
     public void listarProductosClick() {
-        String list = inventarioService.getListProductoString();
-        JOptionPane.showInputDialog(
-                null,
-                "",
-                "Dialog",
-                JOptionPane.PLAIN_MESSAGE,
-                null,
-                null,
-                list);
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    JFrame frame = new JFrame("InventarioUI");
+                    frame.setContentPane(inventarioUI.getMainPanel());
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.setPreferredSize(new Dimension(500, 400));
+                    frame.pack();
+                    frame.setLocationRelativeTo(null);
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     private int coProductoCount = 0;

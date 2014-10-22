@@ -153,7 +153,7 @@ public class PersonalUI {
         gbc.anchor = GridBagConstraints.WEST;
         panel2.add(label1, gbc);
         codigoTextField = new JTextField();
-        codigoTextField.setPreferredSize(new Dimension(200, 22));
+        codigoTextField.setPreferredSize(new Dimension(200, 28));
         codigoTextField.setText("");
         gbc = new GridBagConstraints();
         gbc.gridx = 2;
@@ -169,6 +169,7 @@ public class PersonalUI {
         gbc.anchor = GridBagConstraints.WEST;
         panel2.add(label2, gbc);
         nombreTextField = new JTextField();
+        nombreTextField.setPreferredSize(new Dimension(200, 28));
         gbc = new GridBagConstraints();
         gbc.gridx = 2;
         gbc.gridy = 2;

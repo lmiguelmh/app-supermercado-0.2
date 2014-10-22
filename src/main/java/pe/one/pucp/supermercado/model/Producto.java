@@ -6,9 +6,17 @@ package pe.one.pucp.supermercado.model;
 public class Producto extends AbstractSupermercadoModel {
     String coProducto;
     String noProducto;
-    Double precioVenta;
     Double precioCompra;
+    Double precioVenta;
     Integer inventario;
+
+    public Producto() {
+        coProducto = "";
+        noProducto = "";
+        precioCompra = null;
+        precioVenta = null;
+        inventario = null;
+    }
 
     public String getCoProducto() {
         return coProducto;

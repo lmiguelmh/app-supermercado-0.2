@@ -11,8 +11,7 @@ import javax.swing.*;
 /**
  * Clase PersonalUIController.
  *
- * @author lmamani[at]reniec.gob.pe
- *         lmiguelmh[at]gmail[dot]com
+ * @author lmiguelmh
  * @version 0.0.1
  * @since 21/10/2014 11:06 AM
  */

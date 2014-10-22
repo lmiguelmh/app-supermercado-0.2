@@ -12,8 +12,7 @@ package pe.one.pucp.supermercado.model.util;
 /**
  * Clase JPAAssertions.
  *
- * @author lmamani[at]reniec.gob.pe
- *         lmiguelmh[at]gmail[dot]com
+ * @author lmiguelmh
  * @version 0.0.1
  * @since 20/10/2014 05:14 PM
  */
