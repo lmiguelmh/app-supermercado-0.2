@@ -10,7 +10,9 @@ import java.util.List;
 import java.util.Map;
 
 @Repository
-public class ClienteDaoImp extends AbstractGenericDao<Cliente> implements ClienteDao {
+public class ClienteDaoImp
+        extends AbstractGenericDao<Cliente>
+        implements ClienteDao {
 
     protected Map<String, Cliente> clientes = new HashMap<String, Cliente>();
 
@@ -34,8 +36,9 @@ public class ClienteDaoImp extends AbstractGenericDao<Cliente> implements Client
 
     @Override
     protected Cliente _find(Object id) throws RuntimeException {
-        if(clientes.containsKey(id))
+        if(clientes.containsKey(id)) {
             return clientes.get(id);
+        }
         return null;
     }
 

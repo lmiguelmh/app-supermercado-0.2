@@ -3,7 +3,7 @@ package pe.one.pucp.supermercado.gmodel;
 /**
  * Created by lmiguelmh on 05/10/2014.
  */
-public class Cliente extends AbstractGenericModel {
+public class Cliente extends AbstractGenericModel implements GenericModel {
     String coCliente;
     String noCliente;
     String clasificacion; //A,B,C,D,E

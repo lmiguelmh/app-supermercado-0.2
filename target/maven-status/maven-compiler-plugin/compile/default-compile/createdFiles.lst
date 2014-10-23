@@ -18,12 +18,12 @@ pe\one\pucp\supermercado\dao\ClienteDao.class
 pe\one\pucp\supermercado\ui\MainUI$2.class
 pe\one\pucp\supermercado\ui\PersonalUI$2.class
 pe\one\pucp\supermercado\service\PersonalService.class
-pe\one\pucp\supermercado\dao\hashmap\PersonalHashMapDao.class
 pe\one\pucp\supermercado\dao\InventarioDao.class
+pe\one\pucp\supermercado\dao\hashmap\PersonalHashMapDao.class
 pe\one\pucp\supermercado\ui\PersonalUI$1.class
 pe\one\pucp\supermercado\ui\MainUI$1.class
 pe\one\pucp\supermercado\MainApp$1.class
 pe\one\pucp\supermercado\model\Cliente.class
 pe\one\pucp\supermercado\dao\PersonalDao.class
-pe\one\pucp\supermercado\model\Vendedor.class
 pe\one\pucp\supermercado\service\InventarioService.class
+pe\one\pucp\supermercado\model\Vendedor.class

@@ -1,27 +1,38 @@
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Vendedor.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\ClienteService.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Producto.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\AbstractSupermercadoModel.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\MainApp.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\ClienteUI.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Usuario.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\InventarioDao.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\PersonalUIController.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\InventarioUI.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\PersonalService.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\config\JPAConfiguration.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\MainUIController.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\hashmap\InventarioHashMapDao.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\imp\InventarioImpService.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\hashmap\ClienteHashMapDao.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\hashmap\PersonalHashMapDao.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\InventarioService.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\PersonalDao.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Cliente.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\ClienteUIController.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\InventarioUIController.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\MainUI.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\ClienteDao.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\imp\ClienteImpService.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\imp\PersonalImpService.java
-C:\Users\lmiguelmh\Desktop\CURSO PUCP\DEV\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\PersonalUI.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\InventarioDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Vendedor.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\hashmap\ClienteHashMapDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gmodel\Cliente.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\MainUI.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gservice\imp\AbstractGenericService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gdao\mem\ClienteDaoImp.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gservice\GenericService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\MainApp.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Cliente.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\ClienteUI.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Usuario.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\PersonalDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\PersonalUIController.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\InventarioUIController.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\AbstractSupermercadoModel.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\hashmap\PersonalHashMapDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\hashmap\InventarioHashMapDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\imp\PersonalImpService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gmodel\AbstractGenericModel.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\ClienteUIController.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gdao\GenericDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gservice\ClienteService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\PersonalService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\config\JPAConfiguration.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\dao\ClienteDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\imp\InventarioImpService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\InventarioUI.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\controller\MainUIController.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gdao\mem\AbstractGenericDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gservice\imp\ClienteServiceImp.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\InventarioService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\imp\ClienteImpService.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\model\Producto.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gdao\ClienteDao.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\gmodel\GenericModel.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\ui\PersonalUI.java
+C:\Users\lmamani\Desktop\pucp\dev\app-supermercado-0.2\src\main\java\pe\one\pucp\supermercado\service\ClienteService.java

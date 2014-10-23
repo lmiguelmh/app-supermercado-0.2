@@ -53,7 +53,9 @@ public class ClienteUI {
         clienteTable.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
-                controller.tableSelectionChanged();
+                if (!e.getValueIsAdjusting()) {
+                    controller.tableSelectionChanged();
+                }
             }
         });
         eliminarButton.addActionListener(new ActionListener() {
