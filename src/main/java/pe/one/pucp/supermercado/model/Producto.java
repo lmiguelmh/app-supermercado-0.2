@@ -1,22 +1,14 @@
 package pe.one.pucp.supermercado.model;
 
-/**
- * Created by lmiguelmh on 05/10/2014.
- */
-public class Producto extends AbstractSupermercadoModel {
+public class Producto
+        extends AbstractGenericModel
+        implements GenericModel { //should be ProductoModel
+
     String coProducto;
     String noProducto;
     Double precioCompra;
     Double precioVenta;
     Integer inventario;
-
-    public Producto() {
-        coProducto = "";
-        noProducto = "";
-        precioCompra = null;
-        precioVenta = null;
-        inventario = null;
-    }
 
     public String getCoProducto() {
         return coProducto;
@@ -24,30 +16,6 @@ public class Producto extends AbstractSupermercadoModel {
 
     public void setCoProducto(String coProducto) {
         this.coProducto = coProducto;
-    }
-
-    public Double getPrecioVenta() {
-        return precioVenta;
-    }
-
-    public void setPrecioVenta(Double precioVenta) {
-        this.precioVenta = precioVenta;
-    }
-
-    public Double getPrecioCompra() {
-        return precioCompra;
-    }
-
-    public void setPrecioCompra(Double precioCompra) {
-        this.precioCompra = precioCompra;
-    }
-
-    public Integer getInventario() {
-        return inventario;
-    }
-
-    public void setInventario(Integer inventario) {
-        this.inventario = inventario;
     }
 
     public String getNoProducto() {
@@ -58,8 +26,42 @@ public class Producto extends AbstractSupermercadoModel {
         this.noProducto = noProducto;
     }
 
+    public Double getPrecioCompra() {
+        return precioCompra;
+    }
+
+    public void setPrecioCompra(Double precioCompra) {
+        this.precioCompra = precioCompra;
+    }
+
+    public Double getPrecioVenta() {
+        return precioVenta;
+    }
+
+    public void setPrecioVenta(Double precioVenta) {
+        this.precioVenta = precioVenta;
+    }
+
+    public Integer getInventario() {
+        return inventario;
+    }
+
+    public void setInventario(Integer inventario) {
+        this.inventario = inventario;
+    }
+
     @Override
-    public boolean isValidForDao() {
+    public Object getId() {
+        return coProducto;
+    }
+
+    @Override
+    public boolean isValidForCreate() {
+        return coProducto!=null && !coProducto.isEmpty();
+    }
+
+    @Override
+    public boolean isValidForUpdate() {
         return coProducto!=null && !coProducto.isEmpty();
     }
 }
