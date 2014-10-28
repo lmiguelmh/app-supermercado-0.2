@@ -1,0 +1,52 @@
+
+java -cp h2-1.4.182.jar org.h2.tools.Shell
+
+
+CREATE TABLE
+SMTM_CLIENTE
+(
+co_cliente VARCHAR(32),
+no_cliente VARCHAR(200),
+clasificacion VARCHAR(32)
+);
+
+
+CREATE TABLE
+SMTM_PRODUCTO
+(
+co_producto VARCHAR(32),
+no_producto VARCHAR(200),
+precio_compra DECIMAL(20,2),
+precio_venta DECIMAL(20,2),
+inventario INTEGER
+);
+
+
+CREATE TABLE
+SMTM_VENDEDOR
+(
+co_vendedor VARCHAR(32),
+no_vendedor VARCHAR(200),
+es_vendedor CHAR(1)
+);
+
+
+CREATE TABLE
+SMTM_VENTA
+(
+co_venta BIGINT,
+co_cliente VARCHAR(32),
+co_vendedor VARCHAR(32),
+monto_total DECIMAL(20,2),
+fecha_venta TIMESTAMP
+);
+
+
+CREATE TABLE
+SMTD_VENTA_DETALLE
+(
+co_venta BIGINT,
+co_producto VARCHAR(32),
+cantidad INTEGER,
+monto_total DECIMAL(20,2)
+);
