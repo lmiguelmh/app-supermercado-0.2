@@ -1,12 +1,12 @@
 package pe.one.pucp.supermercado.model;
 
-public class Vendedor
-        extends AbstractGenericModel
-        implements GenericModel {
-
+/**
+ * Created by lmiguelmh on 05/10/2014.
+ */
+public class Vendedor extends AbstractSupermercadoModel {
     String coVendedor;
-    String esVendedor;
-    String noVendedor;
+    String esVendedor; // estado vendedor
+    String noVendedor; // nombre
 
     public Vendedor() {
         coVendedor = "";
@@ -39,17 +39,7 @@ public class Vendedor
     }
 
     @Override
-    public Object getId() {
-        return coVendedor;
-    }
-
-    @Override
-    public boolean isValidForCreate() {
-        return coVendedor!=null && !coVendedor.isEmpty();
-    }
-
-    @Override
-    public boolean isValidForUpdate() {
+    public boolean isValidForDao() {
         return coVendedor!=null && !coVendedor.isEmpty();
     }
 }

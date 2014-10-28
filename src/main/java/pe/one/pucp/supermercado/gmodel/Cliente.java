@@ -1,9 +1,9 @@
-package pe.one.pucp.supermercado.model;
+package pe.one.pucp.supermercado.gmodel;
 
 /**
  * Created by lmiguelmh on 05/10/2014.
  */
-public class Cliente extends AbstractSupermercadoModel {
+public class Cliente extends AbstractGenericModel implements GenericModel {
     String coCliente;
     String noCliente;
     String clasificacion; //A,B,C,D,E
@@ -32,8 +32,22 @@ public class Cliente extends AbstractSupermercadoModel {
         this.clasificacion = clasificacion;
     }
 
-    @Override
     public boolean isValidForDao() {
+        return coCliente!=null && !coCliente.isEmpty();
+    }
+
+    @Override
+    public Object getId() {
+        return coCliente;
+    }
+
+    @Override
+    public boolean isValidForCreate() {
+        return coCliente!=null && !coCliente.isEmpty();
+    }
+
+    @Override
+    public boolean isValidForUpdate() {
         return coCliente!=null && !coCliente.isEmpty();
     }
 }

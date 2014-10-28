@@ -1,0 +1,17 @@
+package pe.one.pucp.supermercado.model;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
+/**
+ * Created by lmiguelmh on 05/10/2014.
+ */
+public abstract class AbstractSupermercadoModel {
+
+    public abstract boolean isValidForDao();
+
+    @Override
+    public String toString() {
+        return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+    }
+}

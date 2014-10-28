@@ -2,7 +2,7 @@ package pe.one.pucp.supermercado.ui;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pe.one.pucp.supermercado.controller.MainController;
+import pe.one.pucp.supermercado.controller.MainUIController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,14 +28,15 @@ public class MainUI {
     private JButton listarClientesButton;
     private JButton modificarClientesButton;
 
+    // 1 controller per view
     @Autowired
-    MainController controller;
+    MainUIController controller;
 
     public MainUI() {
         listarPersonalButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                controller.administrarVendedorClick();
+                controller.listarPersonalClick();
             }
         });
         //modificarPersonalButton.addActionListener(new ActionListener() {
@@ -47,7 +48,7 @@ public class MainUI {
         listarProductosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                controller.administrarProductoClick();
+                controller.listarProductosClick();
             }
         });
         //modificarProductosButton.addActionListener(new ActionListener() {
@@ -59,7 +60,7 @@ public class MainUI {
         listarClientesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                controller.administrarClienteClick();
+                controller.listarClientesClick();
             }
         });
         //modificarClientesButton.addActionListener(new ActionListener() {

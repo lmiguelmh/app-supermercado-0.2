@@ -1,13 +1,10 @@
 package pe.one.pucp.supermercado.ui;
 
-import pe.one.pucp.supermercado.model.GenericModel;
+import pe.one.pucp.supermercado.gmodel.GenericModel;
 
 import javax.swing.table.TableModel;
-import java.awt.*;
 
 public interface GenericUI<T extends GenericModel> {
-
-    Container getMainPanel();
 
     Object getSelectedId();
 

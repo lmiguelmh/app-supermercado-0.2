@@ -1,14 +1,22 @@
 package pe.one.pucp.supermercado.model;
 
-public class Producto
-        extends AbstractGenericModel
-        implements GenericModel { //should be ProductoModel
-
+/**
+ * Created by lmiguelmh on 05/10/2014.
+ */
+public class Producto extends AbstractSupermercadoModel {
     String coProducto;
     String noProducto;
     Double precioCompra;
     Double precioVenta;
     Integer inventario;
+
+    public Producto() {
+        coProducto = "";
+        noProducto = "";
+        precioCompra = null;
+        precioVenta = null;
+        inventario = null;
+    }
 
     public String getCoProducto() {
         return coProducto;
@@ -16,22 +24,6 @@ public class Producto
 
     public void setCoProducto(String coProducto) {
         this.coProducto = coProducto;
-    }
-
-    public String getNoProducto() {
-        return noProducto;
-    }
-
-    public void setNoProducto(String noProducto) {
-        this.noProducto = noProducto;
-    }
-
-    public Double getPrecioCompra() {
-        return precioCompra;
-    }
-
-    public void setPrecioCompra(Double precioCompra) {
-        this.precioCompra = precioCompra;
     }
 
     public Double getPrecioVenta() {
@@ -42,6 +34,14 @@ public class Producto
         this.precioVenta = precioVenta;
     }
 
+    public Double getPrecioCompra() {
+        return precioCompra;
+    }
+
+    public void setPrecioCompra(Double precioCompra) {
+        this.precioCompra = precioCompra;
+    }
+
     public Integer getInventario() {
         return inventario;
     }
@@ -50,18 +50,16 @@ public class Producto
         this.inventario = inventario;
     }
 
-    @Override
-    public Object getId() {
-        return coProducto;
+    public String getNoProducto() {
+        return noProducto;
+    }
+
+    public void setNoProducto(String noProducto) {
+        this.noProducto = noProducto;
     }
 
     @Override
-    public boolean isValidForCreate() {
-        return coProducto!=null && !coProducto.isEmpty();
-    }
-
-    @Override
-    public boolean isValidForUpdate() {
+    public boolean isValidForDao() {
         return coProducto!=null && !coProducto.isEmpty();
     }
 }
