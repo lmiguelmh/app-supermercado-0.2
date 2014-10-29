@@ -31,17 +31,19 @@ public class ProductoControllerImp
     }
 
     static final String[] names = {"X3 TerranConflict", "X3 AlbionPrelude", "Sid Meiers' Alpha Centaury", "Tomb Raider Legend", "Ogame", "Eve Online", "StarCraft", "StarCraft II", "Tekken", "Metal Slug", "Contra III"};
-    static final double maxPrice = 100.0;
+    static final double maxPrecio = 100.0;
     static final double spread = 0.25; //25% spread = precioVenta-precioCompra
+    static final int maxInventario = 25; //25% spread = precioVenta-precioCompra
 
     @Override
     public void randomClick() {
         Producto producto = new Producto();
-        producto.setCoProducto(""+getService().list().size());
+        //producto.setCoProducto(""+getService().list().size());
+        producto.setCoProducto(String.format("%06X", (int)(Math.random()*0x1000000)));
         producto.setNoProducto(names[(int) Math.round(Math.random() * (names.length - 1))]);
-        producto.setPrecioCompra(Math.round(Math.random()*maxPrice * 100.0)/100.0);
+        producto.setPrecioCompra(Math.round(Math.random()* maxPrecio * 100.0)/100.0);
         producto.setPrecioVenta(Math.round(producto.getPrecioCompra()*(1+spread) *100.0)/100.0);
-        producto.setInventario((int) Math.round(Math.random() * 25));
+        producto.setInventario((int) Math.round(Math.random() * maxInventario));
         getUI().setToUI(producto);
     }
 

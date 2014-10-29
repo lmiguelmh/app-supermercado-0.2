@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Repository
+//@Repository
 public class VendedorDaoImp
         extends AbstractGenericDao<Vendedor>
         implements VendedorDao {
@@ -17,16 +17,16 @@ public class VendedorDaoImp
     private Map<String, Vendedor> repository = new HashMap<String, Vendedor>();
 
     @Override
-    protected Vendedor _insert(Vendedor cliente) throws RuntimeException {
-        repository.put(cliente.getCoVendedor(), cliente);
-        return cliente;
+    protected Vendedor _insert(Vendedor vendedor) throws RuntimeException {
+        repository.put(vendedor.getCoVendedor(), vendedor);
+        return vendedor;
     }
 
     @Override
-    protected Vendedor _update(Vendedor cliente) throws RuntimeException {
-        repository.remove(cliente.getCoVendedor());
-        repository.put(cliente.getCoVendedor(), cliente);
-        return cliente;
+    protected Vendedor _update(Vendedor vendedor) throws RuntimeException {
+        repository.remove(vendedor.getCoVendedor());
+        repository.put(vendedor.getCoVendedor(), vendedor);
+        return vendedor;
     }
 
     @Override

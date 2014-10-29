@@ -35,7 +35,8 @@ public class VendedorControllerImp
     @Override
     public void randomClick() {
         Vendedor vendedor = new Vendedor();
-        vendedor.setCoVendedor(""+getService().list().size());
+        //vendedor.setCoVendedor(""+getService().list().size());
+        vendedor.setCoVendedor(String.format("V%02d-%04d", (int)(Math.random()*100), (int)(Math.random()*10000)));
         vendedor.setNoVendedor(names[(int)Math.round(Math.random() * (names.length-1))]);
         vendedor.setEsVendedor("" + (int)Math.round(Math.random()*1));
         getUI().setToUI(vendedor);

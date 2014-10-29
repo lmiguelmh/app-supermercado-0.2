@@ -4,16 +4,22 @@
     <list default="true" id="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" name="Default" comment="" />
     <ignored path="app-supermercado.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414456723653" ignored="false" />
+    <file path="/Dummy.txt" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414548879811" ignored="false" />
     <file path="/pom.xml" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414475203971" ignored="false" />
     <file path="/a.dummy" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414460229992" ignored="false" />
-    <file path="/application.properties" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414473151101" ignored="false" />
+    <file path="/application.properties" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414553837842" ignored="false" />
     <file path="G:/Java/global/afas/afas-web/src/main/webapp/WEB-INF/config/jdbc.properties" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414465494235" ignored="false" />
     <file path="/jdbc.properties" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414465358052" ignored="false" />
-    <file path="/DataSourceAbstractGenericDao.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414471561518" ignored="false" />
-    <file path="/fragment.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414467156001" ignored="false" />
-    <file path="/ClienteDaoImp.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414469882089" ignored="false" />
+    <file path="/DataSourceAbstractGenericDao.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414551407248" ignored="false" />
+    <file path="/fragment.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414551616433" ignored="false" />
+    <file path="/ClienteDaoImp.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414551445214" ignored="false" />
     <file path="/MainApp.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414475369114" ignored="false" />
+    <file path="/GenericDao.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414549344633" ignored="false" />
+    <file path="/ClienteControllerImp.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414549955793" ignored="false" />
+    <file path="/ProductoDaoImp.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414551153825" ignored="false" />
+    <file path="/VendedorDaoImp.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414552724840" ignored="false" />
+    <file path="/ProductoControllerImp.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414553482131" ignored="false" />
+    <file path="/VendedorControllerImp.java" changelist="3ebbce9a-8a00-4fb6-bbbf-5e2bca539420" time="1414553621274" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +34,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -62,7 +69,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -72,21 +78,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataSourceAbstractGenericDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/DataSourceAbstractGenericDao.java">
+      <file leaf-file-name="MainApp.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="6" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClienteDaoImp.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/ClienteDaoImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="124" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.33333334">
+            <state line="45" column="49" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.8544974">
               <folding />
             </state>
           </provider>
@@ -95,38 +90,7 @@
       <file leaf-file-name="application.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="52" selection-start="457" selection-end="484" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainApp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/MainApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="14" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1798#2494#0" expanded="true" />
-                <element signature="e#2483#2484#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClienteDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/ClienteDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClienteDaoImp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/ClienteDaoImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="2" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,22 +114,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/ui/GenericUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/ui/swing/VendedorUISwing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/ui/swing/ProductoUISwing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/ui/swing/ClienteUISwing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/MainUIController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/gcontroller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/ui/MainUI.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pe/one/pucp/supermercado/model/integration/IntegrationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/gservice/imp/ProductoServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/AbstractGenericDao.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/ClienteDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/GenericDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/swing/ClienteControllerImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/ProductoDaoImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/DataSourceAbstractGenericDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/ClienteDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/ProductoDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/VendedorDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/VendedorDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/swing/ProductoControllerImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/swing/VendedorControllerImp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/MainApp.java" />
       </list>
     </option>
   </component>
@@ -293,16 +257,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app-supermercado" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -478,7 +432,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -508,46 +462,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mem" />
+              <option name="myItemId" value="swing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="app-supermercado" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app-supermercado-0.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supermercado" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -566,17 +496,17 @@
     <property name="last_opened_file_path" value="G:/Java/global/afas" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -616,12 +546,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -630,6 +554,12 @@
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -674,6 +604,35 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="GLUE" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -700,35 +659,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="GLUE" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -835,14 +765,12 @@
     <option name="totallyTimeSpent" value="52321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-8" width="1553" height="916" extended-state="6" />
+    <frame x="55" y="-8" width="1553" height="916" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="155" y="92" width="1353" height="716" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4893617" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.6706507" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -851,21 +779,23 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3360161" sideWeight="0.51519156" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23876593" sideWeight="0.5508587" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25150904" sideWeight="0.669749" order="0" side_tool="true" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33025098" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25083837" sideWeight="0.5508587" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44914135" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18281938" sideWeight="0.67047817" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="155" y="92" width="1353" height="716" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16271374" sideWeight="0.20851064" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -938,120 +868,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://G:/Java/global/afas/afas.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/model/Producto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/model/Vendedor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/model/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/AbstractGenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="4" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.4549296">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exec.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.49583334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/ClienteDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+        <state line="4" column="17" selection-start="104" selection-end="104" vertical-scroll-proportion="0.14166667">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pe/one/pucp/supermercado/model/util/JPAAssertions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/swing/AbstractGenericController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pe/one/pucp/supermercado/model/integration/IntegrationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="21" selection-start="3111" selection-end="3111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/ClienteDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+        <state line="9" column="22" selection-start="314" selection-end="314" vertical-scroll-proportion="-1.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/DataSourceAbstractGenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="6" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
+        <state line="15" column="62" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/ProductoDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="62" selection-start="2666" selection-end="2722" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/VendedorDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="34" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/ClienteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/swing/ClienteControllerImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="55" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/swing/VendedorControllerImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="26" selection-start="701" selection-end="701" vertical-scroll-proportion="0.61904764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/controller/swing/ProductoControllerImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/VendedorDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="293" selection-end="293" vertical-scroll-proportion="0.17391305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/ProductoDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="48" selection-start="1286" selection-end="1286" vertical-scroll-proportion="1.6521739">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/mem/ClienteDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="291" selection-end="291" vertical-scroll-proportion="0.17391305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/ClienteDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="75" selection-start="1549" selection-end="1620" vertical-scroll-proportion="1.1111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="52" selection-start="457" selection-end="484" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="14" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1798#2494#0" expanded="true" />
-            <element signature="e#2483#2484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pe/one/pucp/supermercado/dao/imp/ClienteDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="124" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.33333334">
+        <state line="45" column="49" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.8544974">
           <folding />
         </state>
       </provider>

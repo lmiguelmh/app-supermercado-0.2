@@ -15,6 +15,7 @@ pe\one\pucp\supermercado\dao\mem\ClienteDaoImp.class
 pe\one\pucp\supermercado\controller\ProductoController.class
 pe\one\pucp\supermercado\dao\mem\VendedorDaoImp.class
 pe\one\pucp\supermercado\controller\MainController$3.class
+pe\one\pucp\supermercado\dao\imp\VendedorDaoImp.class
 pe\one\pucp\supermercado\controller\MainController$1.class
 pe\one\pucp\supermercado\controller\MainController$2.class
 pe\one\pucp\supermercado\MainApp.class
@@ -32,6 +33,7 @@ pe\one\pucp\supermercado\dao\VendedorDao.class
 pe\one\pucp\supermercado\ui\GenericUI.class
 pe\one\pucp\supermercado\ui\ClienteUI.class
 pe\one\pucp\supermercado\ui\swing\ClienteUISwing$2.class
+pe\one\pucp\supermercado\dao\imp\ProductoDaoImp.class
 pe\one\pucp\supermercado\service\imp\ClienteServiceImp.class
 pe\one\pucp\supermercado\ui\swing\ClienteUISwing.class
 pe\one\pucp\supermercado\ui\swing\ClienteUISwing$3.class

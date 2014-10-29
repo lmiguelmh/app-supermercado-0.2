@@ -37,11 +37,11 @@ public class MainApp extends JFrame implements CommandLineRunner {
     MainUI mainUI;
 
     @Bean
-    @ConfigurationProperties(prefix="jdbc")
+    //@ConfigurationProperties(prefix="jdbc")
     public DataSource dataSource() {
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         dataSource.setDriverClass(org.h2.Driver.class);
-        dataSource.setUrl("jdbc:h2:file:G:/h2/bin/test");
+        dataSource.setUrl("jdbc:h2:file:./sm-1.0");
         dataSource.setUsername("");
         dataSource.setPassword("");
         return dataSource;

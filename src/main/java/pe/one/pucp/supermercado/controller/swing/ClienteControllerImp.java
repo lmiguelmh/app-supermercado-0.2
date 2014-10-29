@@ -32,11 +32,11 @@ public class ClienteControllerImp
 
     static final String[] names = {"Dúnadan", "Strider", "Man of the West", "Ranger", "Aragorn", "Tom Bombadil", "Iarwain Ben-Adar", "Forn", "Horald"};
     static final String[] clasifs = {"A+","A","B","C","D","E"};
-
     @Override
     public void randomClick() {
         Cliente cliente = new Cliente();
-        cliente.setCoCliente("" + getService().list().size());
+        //cliente.setCoCliente("" + getService().list().size());
+        cliente.setCoCliente(String.format("%08d", (int)(Math.random()*100000000)));
         cliente.setNoCliente(names[(int) Math.round(Math.random() * (names.length - 1))]);
         cliente.setClasificacion(clasifs[(int)Math.round(Math.random() * (clasifs.length-1))]);
         getUI().setToUI(cliente);

@@ -51,13 +51,12 @@ public class ClienteDaoImp
     protected Cliente _find(Object id) throws RuntimeException {
         Cliente cliente;
         try {
-            cliente = jdbcTemplate.queryForObject(SELECT, BeanPropertyRowMapper.newInstance(Cliente.class), new Object[]{id});
-            //cliente = jdbcTemplate.queryForObject(SELECT, BeanPropertyRowMapper.newInstance(Cliente.class), new Object[]{id}, new int[]{Types.NVARCHAR});
+            cliente = jdbcTemplate.queryForObject(SELECT, BeanPropertyRowMapper.newInstance(Cliente.class), new Object[]{id}, new int[]{Types.NVARCHAR});
         } catch (EmptyResultDataAccessException e) {
-            e.printStackTrace();
+            log.error("ID=" + id + " " + e.getMessage());
             cliente = null;
         } catch (IncorrectResultSizeDataAccessException e) {
-            e.printStackTrace();
+            log.error("ID=" + id + " " + e.getMessage());
             cliente = null;
         }
         return cliente;
@@ -66,6 +65,6 @@ public class ClienteDaoImp
     final String SELECT_ALL = "select * from smtm_cliente";
     @Override
     public List<Cliente> list() throws RuntimeException {
-        return  jdbcTemplate.query(SELECT_ALL, BeanPropertyRowMapper.newInstance(Cliente.class));
+        return jdbcTemplate.query(SELECT_ALL, BeanPropertyRowMapper.newInstance(Cliente.class));
     }
 }

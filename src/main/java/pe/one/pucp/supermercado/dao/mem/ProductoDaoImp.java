@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Repository
+//@Repository
 public class ProductoDaoImp
         extends AbstractGenericDao<Producto>
         implements ProductoDao {
@@ -17,16 +17,16 @@ public class ProductoDaoImp
     private Map<String, Producto> repository = new HashMap<String, Producto>();
 
     @Override
-    protected Producto _insert(Producto cliente) throws RuntimeException {
-        repository.put(cliente.getCoProducto(), cliente);
-        return cliente;
+    protected Producto _insert(Producto producto) throws RuntimeException {
+        repository.put(producto.getCoProducto(), producto);
+        return producto;
     }
 
     @Override
-    protected Producto _update(Producto cliente) throws RuntimeException {
-        repository.remove(cliente.getCoProducto());
-        repository.put(cliente.getCoProducto(), cliente);
-        return cliente;
+    protected Producto _update(Producto producto) throws RuntimeException {
+        repository.remove(producto.getCoProducto());
+        repository.put(producto.getCoProducto(), producto);
+        return producto;
     }
 
     @Override
