@@ -2,9 +2,7 @@ package pe.one.pucp.supermercado.model.integration;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import pe.one.pucp.supermercado.dao.config.JPAConfiguration;
 
 //import org.springframework.transaction.annotation.Transactional;
 //import javax.persistence.EntityManager;
@@ -17,7 +15,7 @@ import pe.one.pucp.supermercado.dao.config.JPAConfiguration;
  * @since 20/10/2014 05:21 PM
  */
 @RunWith(SpringJUnit4ClassRunner. class)
-@ContextConfiguration(classes = {JPAConfiguration.class})
+//@ContextConfiguration(classes = {JPAConfiguration.class})
 //@Transactional
 //@TransactionConfiguration(defaultRollback = true)
 public class IntegrationTests {
