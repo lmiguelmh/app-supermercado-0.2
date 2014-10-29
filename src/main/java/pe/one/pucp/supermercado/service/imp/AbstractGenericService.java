@@ -34,11 +34,16 @@ public abstract class AbstractGenericService<T extends GenericModel>
     }
 
     @Override
-    public TableModel getTableModel() {
-        return new DefaultTableModel(_getTableModelData(),_getTableModelHeader());
+    public List<T> listLikeId(Object id) throws RuntimeException {
+        return getDao().listLikeId(id);
     }
 
-    protected abstract Object[][] _getTableModelData();
+    @Override
+    public TableModel getTableModel(List<T> list) {
+        return new DefaultTableModel(_getTableModelData(list),_getTableModelHeader());
+    }
+
+    protected abstract Object[][] _getTableModelData(List<T> list);
 
     protected abstract Object[] _getTableModelHeader();
 

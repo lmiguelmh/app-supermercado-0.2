@@ -1,13 +1,356 @@
 package pe.one.pucp.supermercado.ui.swing;
 
-import javax.swing.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import pe.one.pucp.supermercado.controller.VentaController;
+import pe.one.pucp.supermercado.model.VentaDetalle;
 
+import javax.swing.*;
+import javax.swing.table.TableModel;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+@org.springframework.stereotype.Component
 public class VentaUISwing {
     private JPanel mainPanel;
     private JTable table1;
     private JTable table2;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JButton buscarVendedorButton;
+    private JTextField clienteTextField;
     private JButton buscarClienteButton;
+    private JTable clienteTable;
+    private JComboBox clienteComboBox;
+    private JComboBox vendedorComboBox;
+    private JTextField vendedorTextField;
+    private JButton buscarVendedorButton;
+    private JTable vendedorTable;
+    private JButton agregarButton;
+    private JButton eliminarButton;
+    private JComboBox productoComboBox;
+    private JTextField productoTextField;
+    private JButton buscarProductoButton;
+    private JTable productoTable;
+    private JTextField cantidadTextField;
+    private JButton insertarVentaButton;
+    private JButton eliminarVentaButton;
+    private JButton nuevaVentaButton;
+
+    @Autowired
+    VentaController controller;
+
+    public VentaUISwing() {
+        buscarClienteButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controller.buscarClienteClick();
+            }
+        });
+        buscarVendedorButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controller.buscarVendedorClick();
+            }
+        });
+        buscarProductoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controller.buscarProductoClick();
+            }
+        });
+        clienteComboBox.setModel(new DefaultComboBoxModel(new Object[]{"Código"}));
+        vendedorComboBox.setModel(new DefaultComboBoxModel(new Object[]{"Código"}));
+        productoComboBox.setModel(new DefaultComboBoxModel(new Object[]{"Código"}));
+        agregarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controller.agregarVentaDetalleClick();
+            }
+        });
+        nuevaVentaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        eliminarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controller.eliminarVentaDetalleClick();
+            }
+        });
+        insertarVentaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controller.insertarVentaClick();
+            }
+        });
+    }
+
+    public String getClienteQuery() {
+        return clienteTextField.getText();
+    }
+
+    public void setClienteTableModel(TableModel tableModel) {
+        clienteTable.setModel(tableModel);
+    }
+
+    public Container getMainPanel() {
+        return mainPanel;
+    }
+
+    public String getVendedorQuery() {
+        return vendedorTextField.getText();
+    }
+
+
+    public void setVendedorTableModel(TableModel tableModel) {
+        vendedorTable.setModel(tableModel);
+    }
+
+    public String getProductoQuery() {
+        return productoTextField.getText();
+    }
+
+    public void setProductoTableModel(TableModel tableModel) {
+        productoTable.setModel(tableModel);
+    }
+
+    public VentaDetalle getVentaDetalleFromUI() {
+        VentaDetalle ventaDetalle = new VentaDetalle();
+        ventaDetalle.setCoProducto((String) getProductoSelectedId());
+        ventaDetalle.setCantidad(Integer.valueOf(cantidadTextField.getText()));
+        return ventaDetalle;
+    }
+
+    public Object getProductoSelectedId() {
+        int row = productoTable.getSelectedRow();
+        if (row >= 0) {
+            return productoTable.getModel().getValueAt(row, 0);
+        }
+        throw new IllegalStateException("Seleccione un producto primero");
+    }
+
+    public Object getVentaDetalleSelectedId() {
+        int row = table2.getSelectedRow();
+        if (row >= 0) {
+            return table2.getModel().getValueAt(row, 0);
+        }
+        throw new IllegalStateException("Seleccione un detalle primero");
+    }
+
+
+    public void setVendaDetalleTableModel(TableModel tableModel) {
+        table2.setModel(tableModel);
+    }
+
+
+    {
+// GUI initializer generated by IntelliJ IDEA GUI Designer
+// >>> IMPORTANT!! <<<
+// DO NOT EDIT OR ADD ANY CODE HERE!
+        $$$setupUI$$$();
+    }
+
+    /**
+     * Method generated by IntelliJ IDEA GUI Designer
+     * >>> IMPORTANT!! <<<
+     * DO NOT edit this method OR call it in your code!
+     *
+     * @noinspection ALL
+     */
+    private void $$$setupUI$$$() {
+        mainPanel = new JPanel();
+        mainPanel.setLayout(new BorderLayout(0, 0));
+        final JPanel panel1 = new JPanel();
+        panel1.setLayout(new BorderLayout(0, 0));
+        mainPanel.add(panel1, BorderLayout.NORTH);
+        final JPanel panel2 = new JPanel();
+        panel2.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        panel1.add(panel2, BorderLayout.CENTER);
+        final JPanel panel3 = new JPanel();
+        panel3.setLayout(new BorderLayout(0, 0));
+        panel2.add(panel3);
+        final JPanel panel4 = new JPanel();
+        panel4.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        panel3.add(panel4, BorderLayout.NORTH);
+        clienteComboBox = new JComboBox();
+        panel4.add(clienteComboBox);
+        clienteTextField = new JTextField();
+        clienteTextField.setColumns(9);
+        panel4.add(clienteTextField);
+        buscarClienteButton = new JButton();
+        buscarClienteButton.setText(" ");
+        panel4.add(buscarClienteButton);
+        final JPanel panel5 = new JPanel();
+        panel5.setLayout(new BorderLayout(0, 0));
+        panel3.add(panel5, BorderLayout.CENTER);
+        final JScrollPane scrollPane1 = new JScrollPane();
+        scrollPane1.setHorizontalScrollBarPolicy(32);
+        scrollPane1.setPreferredSize(new Dimension(100, 100));
+        panel5.add(scrollPane1, BorderLayout.CENTER);
+        clienteTable = new JTable();
+        scrollPane1.setViewportView(clienteTable);
+        final JPanel panel6 = new JPanel();
+        panel6.setLayout(new BorderLayout(0, 0));
+        panel3.add(panel6, BorderLayout.SOUTH);
+        final JLabel label1 = new JLabel();
+        label1.setFont(new Font(label1.getFont().getName(), label1.getFont().getStyle(), 12));
+        label1.setHorizontalAlignment(0);
+        label1.setHorizontalTextPosition(0);
+        label1.setText("CLIENTE");
+        panel6.add(label1, BorderLayout.CENTER);
+        final JPanel panel7 = new JPanel();
+        panel7.setLayout(new BorderLayout(0, 0));
+        panel2.add(panel7);
+        final JPanel panel8 = new JPanel();
+        panel8.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        panel7.add(panel8, BorderLayout.NORTH);
+        vendedorComboBox = new JComboBox();
+        panel8.add(vendedorComboBox);
+        vendedorTextField = new JTextField();
+        vendedorTextField.setColumns(9);
+        panel8.add(vendedorTextField);
+        buscarVendedorButton = new JButton();
+        buscarVendedorButton.setText(" ");
+        panel8.add(buscarVendedorButton);
+        final JPanel panel9 = new JPanel();
+        panel9.setLayout(new BorderLayout(0, 0));
+        panel7.add(panel9, BorderLayout.CENTER);
+        final JScrollPane scrollPane2 = new JScrollPane();
+        scrollPane2.setHorizontalScrollBarPolicy(32);
+        scrollPane2.setPreferredSize(new Dimension(100, 100));
+        panel9.add(scrollPane2, BorderLayout.CENTER);
+        vendedorTable = new JTable();
+        scrollPane2.setViewportView(vendedorTable);
+        final JPanel panel10 = new JPanel();
+        panel10.setLayout(new BorderLayout(0, 0));
+        panel7.add(panel10, BorderLayout.SOUTH);
+        final JLabel label2 = new JLabel();
+        label2.setFont(new Font(label2.getFont().getName(), label2.getFont().getStyle(), 12));
+        label2.setHorizontalAlignment(0);
+        label2.setHorizontalTextPosition(0);
+        label2.setText("VENDEDOR");
+        panel10.add(label2, BorderLayout.CENTER);
+        final JPanel panel11 = new JPanel();
+        panel11.setLayout(new GridBagLayout());
+        panel2.add(panel11);
+        final JPanel panel12 = new JPanel();
+        panel12.setLayout(new BorderLayout(0, 0));
+        panel2.add(panel12);
+        final JPanel panel13 = new JPanel();
+        panel13.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        panel12.add(panel13, BorderLayout.NORTH);
+        productoComboBox = new JComboBox();
+        panel13.add(productoComboBox);
+        productoTextField = new JTextField();
+        productoTextField.setColumns(9);
+        panel13.add(productoTextField);
+        buscarProductoButton = new JButton();
+        buscarProductoButton.setText(" ");
+        panel13.add(buscarProductoButton);
+        final JPanel panel14 = new JPanel();
+        panel14.setLayout(new BorderLayout(0, 0));
+        panel12.add(panel14, BorderLayout.CENTER);
+        final JScrollPane scrollPane3 = new JScrollPane();
+        scrollPane3.setHorizontalScrollBarPolicy(32);
+        scrollPane3.setPreferredSize(new Dimension(100, 100));
+        panel14.add(scrollPane3, BorderLayout.CENTER);
+        productoTable = new JTable();
+        scrollPane3.setViewportView(productoTable);
+        final JPanel panel15 = new JPanel();
+        panel15.setLayout(new BorderLayout(0, 0));
+        panel12.add(panel15, BorderLayout.SOUTH);
+        final JLabel label3 = new JLabel();
+        label3.setFont(new Font(label3.getFont().getName(), label3.getFont().getStyle(), 12));
+        label3.setHorizontalAlignment(0);
+        label3.setHorizontalTextPosition(0);
+        label3.setText("PRODUCTO");
+        panel15.add(label3, BorderLayout.CENTER);
+        final JPanel panel16 = new JPanel();
+        panel16.setLayout(new BorderLayout(0, 0));
+        panel1.add(panel16, BorderLayout.EAST);
+        final JScrollPane scrollPane4 = new JScrollPane();
+        scrollPane4.setHorizontalScrollBarPolicy(32);
+        scrollPane4.setPreferredSize(new Dimension(200, 100));
+        panel16.add(scrollPane4, BorderLayout.CENTER);
+        table2 = new JTable();
+        scrollPane4.setViewportView(table2);
+        final JPanel panel17 = new JPanel();
+        panel17.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        panel16.add(panel17, BorderLayout.NORTH);
+        cantidadTextField = new JTextField();
+        cantidadTextField.setColumns(4);
+        panel17.add(cantidadTextField);
+        agregarButton = new JButton();
+        agregarButton.setText("Agregar");
+        panel17.add(agregarButton);
+        eliminarButton = new JButton();
+        eliminarButton.setText("Eliminar");
+        panel17.add(eliminarButton);
+        final JPanel panel18 = new JPanel();
+        panel18.setLayout(new BorderLayout(0, 0));
+        mainPanel.add(panel18, BorderLayout.SOUTH);
+        final JPanel panel19 = new JPanel();
+        panel19.setLayout(new BorderLayout(0, 0));
+        mainPanel.add(panel19, BorderLayout.CENTER);
+        final JScrollPane scrollPane5 = new JScrollPane();
+        panel19.add(scrollPane5, BorderLayout.CENTER);
+        table1 = new JTable();
+        scrollPane5.setViewportView(table1);
+        final JPanel panel20 = new JPanel();
+        panel20.setLayout(new GridBagLayout());
+        mainPanel.add(panel20, BorderLayout.EAST);
+        insertarVentaButton = new JButton();
+        insertarVentaButton.setText("Insertar Venta");
+        GridBagConstraints gbc;
+        gbc = new GridBagConstraints();
+        gbc.gridx = 1;
+        gbc.gridy = 2;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        panel20.add(insertarVentaButton, gbc);
+        final JPanel spacer1 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 2;
+        gbc.gridy = 2;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        panel20.add(spacer1, gbc);
+        final JPanel spacer2 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 1;
+        gbc.gridy = 3;
+        gbc.fill = GridBagConstraints.VERTICAL;
+        panel20.add(spacer2, gbc);
+        final JPanel spacer3 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        panel20.add(spacer3, gbc);
+        eliminarVentaButton = new JButton();
+        eliminarVentaButton.setText("Eliminar Venta");
+        gbc = new GridBagConstraints();
+        gbc.gridx = 1;
+        gbc.gridy = 4;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        panel20.add(eliminarVentaButton, gbc);
+        final JPanel spacer4 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.fill = GridBagConstraints.VERTICAL;
+        panel20.add(spacer4, gbc);
+        nuevaVentaButton = new JButton();
+        nuevaVentaButton.setText("Nueva Venta");
+        gbc = new GridBagConstraints();
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        panel20.add(nuevaVentaButton, gbc);
+    }
+
+    /**
+     * @noinspection ALL
+     */
+    public JComponent $$$getRootComponent$$$() {
+        return mainPanel;
+    }
 }

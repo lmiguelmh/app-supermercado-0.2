@@ -25,8 +25,8 @@ public class ProductoServiceImp
     static final Object []tableHeader = new Object[] {"Código", "Nombre", "PrecioCompra", "PrecioVenta", "Inventario"};
 
     @Override
-    protected Object[][] _getTableModelData() {
-        List<Producto> list = list();
+    protected Object[][] _getTableModelData(List<Producto> list) {
+        //List<Producto> list = list();
         Object [][]data = new Object[list.size()][tableHeader.length];
         for(int v=0; v<list.size(); v++) {
             data[v][0] = list.get(v).getCoProducto();

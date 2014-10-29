@@ -25,8 +25,8 @@ public class VendedorServiceImp
     static final Object []tableHeader = new Object[] {"Código", "Nombre", "Estado"};
 
     @Override
-    protected Object[][] _getTableModelData() {
-        List<Vendedor> list = list();
+    protected Object[][] _getTableModelData(List<Vendedor> list) {
+        //List<Vendedor> list = list();
         Object [][]data = new Object[list.size()][tableHeader.length];
         for(int v=0; v<list.size(); v++) {
             data[v][0] = list.get(v).getCoVendedor();

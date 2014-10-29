@@ -15,6 +15,8 @@ public interface GenericService<T extends GenericModel> {
 
     T find(Object id) throws RuntimeException;
 
+    List<T> listLikeId(Object id) throws RuntimeException;
+
     // I think this shouldn't be here...
-    TableModel getTableModel();
+    TableModel getTableModel(List<T> list);
 }

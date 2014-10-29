@@ -14,4 +14,6 @@ public interface GenericDao<T extends GenericModel> {
     void delete(Object id) throws RuntimeException;
 
     T find(Object id) throws RuntimeException;
+
+    List<T> listLikeId(Object id) throws RuntimeException;
 }

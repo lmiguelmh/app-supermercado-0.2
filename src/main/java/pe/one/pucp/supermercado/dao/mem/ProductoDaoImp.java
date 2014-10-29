@@ -1,6 +1,5 @@
 package pe.one.pucp.supermercado.dao.mem;
 
-import org.springframework.stereotype.Repository;
 import pe.one.pucp.supermercado.dao.ProductoDao;
 import pe.one.pucp.supermercado.model.Producto;
 
@@ -45,5 +44,10 @@ public class ProductoDaoImp
     @Override
     public List<Producto> list() throws RuntimeException {
         return new ArrayList<Producto>(repository.values());
+    }
+
+    @Override
+    public List<Producto> listLikeId(Object id) throws RuntimeException {
+        throw new UnsupportedOperationException();
     }
 }

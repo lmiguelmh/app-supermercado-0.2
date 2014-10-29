@@ -6,6 +6,7 @@ import pe.one.pucp.supermercado.service.GenericService;
 import pe.one.pucp.supermercado.ui.GenericUI;
 
 import javax.swing.*;
+import java.util.List;
 
 public abstract class AbstractGenericController<T extends GenericModel> implements GenericController {
 
@@ -24,8 +25,9 @@ public abstract class AbstractGenericController<T extends GenericModel> implemen
         try {
             T t = getUI().getFromUI();
             getService().insertOrUpdate(t);
+            List<T> list = getService().list();
             getUI().resetUI();
-            getUI().setTableModel(getService().getTableModel());
+            getUI().setTableModel(getService().getTableModel(list));
             JOptionPane.showMessageDialog(null, "Registro insertado/actualizado", "", JOptionPane.INFORMATION_MESSAGE);
         } catch(Exception e) {
             e.printStackTrace();
@@ -38,8 +40,9 @@ public abstract class AbstractGenericController<T extends GenericModel> implemen
         try {
             T t = getUI().getFromUI();
             getService().delete(t.getId());
+            List<T> list = getService().list();
             getUI().resetUI();
-            getUI().setTableModel(getService().getTableModel());
+            getUI().setTableModel(getService().getTableModel(list));
             JOptionPane.showMessageDialog(null, "Registro eliminado", "", JOptionPane.INFORMATION_MESSAGE);
         } catch(Exception e) {
             e.printStackTrace();

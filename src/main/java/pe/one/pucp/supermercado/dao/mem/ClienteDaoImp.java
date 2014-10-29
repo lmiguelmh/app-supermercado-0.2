@@ -1,6 +1,5 @@
 package pe.one.pucp.supermercado.dao.mem;
 
-import org.springframework.stereotype.Repository;
 import pe.one.pucp.supermercado.dao.ClienteDao;
 import pe.one.pucp.supermercado.model.Cliente;
 
@@ -45,5 +44,10 @@ public class ClienteDaoImp
     @Override
     public List<Cliente> list() throws RuntimeException {
         return new ArrayList<Cliente>(repository.values());
+    }
+
+    @Override
+    public List<Cliente> listLikeId(Object id) throws RuntimeException {
+        throw new UnsupportedOperationException();
     }
 }

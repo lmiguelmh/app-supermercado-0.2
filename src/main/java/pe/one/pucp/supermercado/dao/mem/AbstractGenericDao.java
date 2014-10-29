@@ -35,7 +35,7 @@ public abstract class AbstractGenericDao<T extends GenericModel>
             throw new IllegalArgumentException("Id no válido para " + type.getSimpleName());
         }
         if(find(id) == null) {
-            throw new IllegalStateException(type.getSimpleName() + " no existe");
+            throw new IllegalStateException(type.getSimpleName() + " no existe: " + id);
         } else {
             _delete(id);
         }

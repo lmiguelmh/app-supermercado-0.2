@@ -26,6 +26,7 @@ public class MainUI {
     private JLabel sampleLabel;
     private JButton modificarPersonalButton;
     private JButton listarClientesButton;
+    private JButton listarVentasButton;
     private JButton modificarClientesButton;
 
     @Autowired
@@ -68,6 +69,12 @@ public class MainUI {
         //        controller.modificarClientesClick();
         //    }
         //});
+        listarVentasButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controller.administrarVentaClick();
+            }
+        });
     }
 
     public JPanel getMainPanel() {
@@ -146,7 +153,7 @@ public class MainUI {
         sampleLabel.setText("pe-text");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
-        gbc.gridy = 9;
+        gbc.gridy = 12;
         mainPanel.add(sampleLabel, gbc);
         final JLabel label3 = new JLabel();
         label3.setFont(new Font(label3.getFont().getName(), Font.BOLD, label3.getFont().getSize()));
@@ -187,6 +194,33 @@ public class MainUI {
         gbc.gridy = 6;
         gbc.fill = GridBagConstraints.VERTICAL;
         mainPanel.add(spacer3, gbc);
+        final JPanel spacer4 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 9;
+        gbc.fill = GridBagConstraints.VERTICAL;
+        mainPanel.add(spacer4, gbc);
+        final JLabel label4 = new JLabel();
+        label4.setFont(new Font(label4.getFont().getName(), Font.BOLD, label4.getFont().getSize()));
+        label4.setText("Ventas");
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 10;
+        mainPanel.add(label4, gbc);
+        final JPanel panel4 = new JPanel();
+        panel4.setLayout(new GridBagLayout());
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 11;
+        gbc.fill = GridBagConstraints.BOTH;
+        mainPanel.add(panel4, gbc);
+        listarVentasButton = new JButton();
+        listarVentasButton.setText("Administrar Ventas");
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        panel4.add(listarVentasButton, gbc);
     }
 
     /**

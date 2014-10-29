@@ -25,8 +25,8 @@ public class ClienteServiceImp
     static final Object []tableHeader = new Object[] {"Código", "Nombre", "Clasificación"};
 
     @Override
-    protected Object[][] _getTableModelData() {
-        List<Cliente> list = list();
+    protected Object[][] _getTableModelData(List<Cliente> list) {
+        //List<Cliente> list = list();
         Object [][]data = new Object[list.size()][tableHeader.length];
         for(int v=0; v<list.size(); v++) {
             data[v][0] = list.get(v).getCoCliente();

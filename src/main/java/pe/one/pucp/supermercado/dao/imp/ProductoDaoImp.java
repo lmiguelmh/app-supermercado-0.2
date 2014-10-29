@@ -68,4 +68,10 @@ public class ProductoDaoImp
     public List<Producto> list() throws RuntimeException {
         return jdbcTemplate.query(SELECT_ALL, BeanPropertyRowMapper.newInstance(Producto.class));
     }
+
+    final String SELECT_LIKE_ID = "select * from smtm_producto where co_producto like ?";
+    @Override
+    public List<Producto> listLikeId(Object id) throws RuntimeException {
+        return jdbcTemplate.query(SELECT_LIKE_ID, BeanPropertyRowMapper.newInstance(Producto.class), id);
+    }
 }

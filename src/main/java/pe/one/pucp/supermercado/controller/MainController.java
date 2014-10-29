@@ -8,6 +8,7 @@ import pe.one.pucp.supermercado.service.VendedorService;
 import pe.one.pucp.supermercado.ui.ClienteUI;
 import pe.one.pucp.supermercado.ui.ProductoUI;
 import pe.one.pucp.supermercado.ui.VendedorUI;
+import pe.one.pucp.supermercado.ui.swing.VentaUISwing;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,7 +23,7 @@ public class MainController {
     VendedorService vendedorService;
 
     public void administrarVendedorClick() {
-        vendedorUI.setTableModel(vendedorService.getTableModel());
+        vendedorUI.setTableModel(vendedorService.getTableModel(vendedorService.list()));
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
@@ -48,7 +49,7 @@ public class MainController {
     ProductoService productoService;
 
     public void administrarProductoClick() {
-        productoUI.setTableModel(productoService.getTableModel());
+        productoUI.setTableModel(productoService.getTableModel(productoService.list()));
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
@@ -74,7 +75,7 @@ public class MainController {
     ClienteService clienteService;
 
     public void administrarClienteClick() {
-        clienteUI.setTableModel(clienteService.getTableModel());
+        clienteUI.setTableModel(clienteService.getTableModel(clienteService.list()));
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
@@ -92,4 +93,25 @@ public class MainController {
         });
     }
 
+    @Autowired
+    VentaUISwing ventaUISwing;
+
+    public void administrarVentaClick() {
+        //clienteUI.setTableModel(clienteService.getTableModel());
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    JFrame frame = new JFrame("ClienteUI");
+                    frame.setContentPane(ventaUISwing.getMainPanel());
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.setPreferredSize(new Dimension(1020, 600));
+                    frame.pack();
+                    frame.setLocationRelativeTo(null);
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
 }

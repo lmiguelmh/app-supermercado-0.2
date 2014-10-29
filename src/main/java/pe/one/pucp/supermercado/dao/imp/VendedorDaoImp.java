@@ -10,6 +10,7 @@ import pe.one.pucp.supermercado.dao.VendedorDao;
 import pe.one.pucp.supermercado.dao.mem.AbstractGenericDao;
 import pe.one.pucp.supermercado.model.Producto;
 import pe.one.pucp.supermercado.model.Vendedor;
+import pe.one.pucp.supermercado.ui.swing.VentaUISwing;
 
 import java.sql.Types;
 import java.util.ArrayList;
@@ -67,5 +68,11 @@ public class VendedorDaoImp
     @Override
     public List<Vendedor> list() throws RuntimeException {
         return jdbcTemplate.query(SELECT_ALL, BeanPropertyRowMapper.newInstance(Vendedor.class));
+    }
+
+    final String SELECT_LIKE_ID = "select * from smtm_vendedor where co_vendedor like ?";
+    @Override
+    public List<Vendedor> listLikeId(Object id) throws RuntimeException {
+        return jdbcTemplate.query(SELECT_LIKE_ID, BeanPropertyRowMapper.newInstance(Vendedor.class), id);
     }
 }

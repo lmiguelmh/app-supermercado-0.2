@@ -51,7 +51,7 @@ public class ClienteDaoImp
     protected Cliente _find(Object id) throws RuntimeException {
         Cliente cliente;
         try {
-            cliente = jdbcTemplate.queryForObject(SELECT, BeanPropertyRowMapper.newInstance(Cliente.class), new Object[]{id}, new int[]{Types.NVARCHAR});
+            cliente = jdbcTemplate.queryForObject(SELECT, BeanPropertyRowMapper.newInstance(Cliente.class), new Object[]{id});
         } catch (EmptyResultDataAccessException e) {
             log.error("ID=" + id + " " + e.getMessage());
             cliente = null;
@@ -66,5 +66,11 @@ public class ClienteDaoImp
     @Override
     public List<Cliente> list() throws RuntimeException {
         return jdbcTemplate.query(SELECT_ALL, BeanPropertyRowMapper.newInstance(Cliente.class));
+    }
+
+    final String SELECT_LIKE_ID = "select * from smtm_cliente where co_cliente like ?";
+    @Override
+    public List<Cliente> listLikeId(Object id) throws RuntimeException {
+        return jdbcTemplate.query(SELECT_LIKE_ID, BeanPropertyRowMapper.newInstance(Cliente.class), id);
     }
 }
